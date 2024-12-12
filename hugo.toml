@@ -52,7 +52,7 @@ theme = 'fivem.illium.cx-theme'
             youtube = ""
 
     [params.globalFrontmatter]
-        author = "Jing Wang"
+        author = "Illium"
         description = "This is my new hugo site"
         keywords = "hugo,site,new"
 
