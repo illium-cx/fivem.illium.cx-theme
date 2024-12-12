@@ -59,6 +59,13 @@
         </div>
 
         <div class="article-meta">
+            {{ with  $.Site.Params.page.showBreadcrumb }}
+                <div class="breadcumb">
+                    <i class="bi bi-folder"></i>
+                    {{ partial "module/breadcrumb" $ }}
+                </div>
+            {{ end }}
+            
             {{ with .Params.categories }}
                 <div class="categories">
                     <i
@@ -86,13 +93,6 @@
                             {{ . }}
                         </a>
                     {{ end }}
-                </div>
-            {{ end }}
-
-            {{ with  $.Site.Params.page.showBreadcrumb }}
-                <div class="breadcumb">
-                    <i class="bi bi-folder"></i>
-                    {{ partial "module/breadcrumb" $ }}
                 </div>
             {{ end }}
 

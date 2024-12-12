@@ -11,7 +11,7 @@
 
 <a href="{{ .Permalink }}" class="bread-btn">
     {{ if .IsHome }}
-        <i class="bi bi-house-fill"></i>
+        <!-- <i class="bi bi-house-fill"></i> -->
     {{ else if eq .Kind "taxonomy" }}
         {{ partial "module/term_icon" . }}
     {{ end }}
