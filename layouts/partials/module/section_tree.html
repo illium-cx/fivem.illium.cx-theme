@@ -1,6 +1,7 @@
 {{ $context := .context }}
 {{ $currentPage := .currentPage }}
 
+
 {{ with $context }}
     {{ $page_children := where ( union .Sections .Pages ) "Kind" "page" }}
     {{ $section_children := where ( union .Sections .Pages ) "Kind" "!=" "page" }}
@@ -12,6 +13,7 @@
     <ul class="section-tree">
         {{ range $children }}
             {{ if .IsNode }}
+            
                 <li
                     {{ if .IsAncestor $currentPage }}
                         class="dir opened-dir"
