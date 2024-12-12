@@ -146,6 +146,10 @@ article.main
     text-align: justify;
 }
 
+p.long-description a {
+    text-decoration: underline;
+}
+
 /* Recent Posts */
 article.main
     > div.home
