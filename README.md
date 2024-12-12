@@ -634,6 +634,23 @@ hugo
 
 This will build your site in release mode, where all `.html`, `.css`, and `.js` files will be minified and merged when possible.
 
+### Add Content
+
+To add a single new post
+```
+hugo new content post.md
+```
+
+To add nested posts e.g to add a `Guides` section
+```
+hugo new content guides/post.md
+```
+
+Remember new content is a draft by default, so you either need to manually edit the `draft` parameter in the post's header to `false`, or start the server and add the `--buildDrafts` flag
+```
+hugo server --buildDrafts
+```
+
 ## Feature Plan
 
 * Tab View Support
