@@ -9,7 +9,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: underline;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -238,6 +238,7 @@ footer {
     justify-content: space-between;
 }
 
+
 footer > div {
     display: inline;
     flex: 0 0 auto;
@@ -313,6 +314,10 @@ footer
     > ul.language-selector-menu {
     font-size: 10pt;
     left: -2em;
+}
+
+.copyright-link a {
+    text-decoration: underline;
 }
 
 /*** Section Tree Listing ***/
