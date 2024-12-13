@@ -13,7 +13,6 @@
     <ul class="section-tree">
         {{ range $children }}
             {{ if .IsNode }}
-            
                 <li
                     {{ if .IsAncestor $currentPage }}
                         class="dir opened-dir"

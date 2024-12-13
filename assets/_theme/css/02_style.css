@@ -84,6 +84,10 @@ article.main {
     overflow-y: auto;
 }
 
+.content {
+    width: 50%;
+}
+
 article.main > button.sidebar-toggle-btn {
     display: none;
 }
@@ -216,6 +220,7 @@ article.main > div.list-files ul.section-tree > li {
 
 article.main > div.list-files ul.section-tree > li.file {
     font-size: 12pt;
+    color: #fff;
 }
 
 article.main > div.list-files > ul.section-tree > li.file:hover {
@@ -346,7 +351,7 @@ ul.section-tree > li > a:hover {
 ul.section-tree > li.dir {
     padding-left: 10pt;
     padding-top: 10pt;
-    color: grey;
+    color: #c5c5c5;
 }
 
 ul.section-tree > li.dir > span.dir-text {
@@ -389,7 +394,7 @@ ul.section-tree > li.opened-dir::before {
 ul.section-tree > li.file {
     padding-left: 5pt;
     padding-top: 7pt;
-    color: grey;
+    color: white;
     font-size: 95%;
     margin-left: 28pt;
 }
