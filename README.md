@@ -7,7 +7,7 @@
 
 > **Dark Theme Editor** is a blog theme for [Hugo](https://gohugo.io/).
 
-DEMO - <https://jingwangtw.github.io/dark-theme-editor/>
+DEMO - <https://fivem.illium.cx/>
 
 ⚠️ The theme needs at least Hugo v0.112.x.
 
