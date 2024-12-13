@@ -2,7 +2,7 @@
     <div class="footer-left">
         <ul class="social">
             {{ with $.Site.Params.globalFrontmatter.author }}
-                <li>{{ . }}</li>
+                <li><a href="/">{{ . }}</a></li>
             {{ end }}
             <li>-</li>
             {{ if $.Site.Params.footer.copyrightStr }}
