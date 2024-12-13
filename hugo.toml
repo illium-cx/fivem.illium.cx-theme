@@ -24,14 +24,14 @@ theme = 'fivem.illium.cx-theme'
         bingVerifivation = ""
 
     [params.header]
-        title = "My New Hugo Site"
-        subtitle = "A Site Built by Hugo"
+        title = "Notes"
+        subtitle = ""
         [params.header.logo]
             imgUrl = ""
             logoLink = ""
 
     [params.footer]
-        copyrightStr = "All Rights Reserved ®."
+        copyrightStr = ""
         counter = true
         language = true
         hugoVersion = true
@@ -53,11 +53,11 @@ theme = 'fivem.illium.cx-theme'
 
     [params.globalFrontmatter]
         author = "Illium"
-        description = "This is my new hugo site"
-        keywords = "hugo,site,new"
+        description = "Notes on installing/configuring FiveM, txAdmin, QBCore and other related utilites"
+        keywords = "fivem,txadmin,qbcore,linux,debian,nginx,mariadb,javascript,lua"
 
     [params.homePage]
-        siteLongDescription = "Hugo is a fast and easy-to-use static website generator written in Go. It renders a complete HTML website from content and templates in a directory, utilizing Markdown files for metadata. It's optimized for speed and suitable for various website types."
+        siteLongDescription = ""
         siteLongDescriptionTitle = "Start"
         showRecentPostsBlock = true
         numOfRecentPosts = 5
