@@ -652,10 +652,10 @@ hugo server --buildDrafts
 ```
 
 ### Details Shortcode
-To use the `details` shortcode, add the partial to your markdown content. If you do not want it to be open by default, do not add the `open` flag.
+To use the `details` shortcode, add the partial to your markdown content. If you do not want it to be open by default, do not add the `open="true"` tag.
 
 ```go
-{{< details summary="hidden info" open >}}
+{{< details summary="hidden info" open="true" >}}
     // what you want to be hidden
 {{< /details >}}
 ```
