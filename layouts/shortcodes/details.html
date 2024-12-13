@@ -1,4 +1,5 @@
-<details {{ with .Get "open" }}false{{ end }}>
+<details {{ if .Get "open" }}open{{ else }}{{ end }}>
     <summary>{{ .Get "summary" }}</summary>
     {{ .Inner | markdownify }}
+    
 </details>

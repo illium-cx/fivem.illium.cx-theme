@@ -651,6 +651,15 @@ Remember new content is a draft by default, so you either need to manually edit 
 hugo server --buildDrafts
 ```
 
+### Details Shortcode
+To use the `details` shortcode, add the partial to your markdown content. If you do not want it to be open by default, do not add the `open` flag.
+
+```go
+{{< details summary="hidden info" open >}}
+    // what you want to be hidden
+{{< /details >}}
+```
+
 ## Feature Plan
 
 * Tab View Support

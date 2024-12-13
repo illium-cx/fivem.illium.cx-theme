@@ -1,18 +1,25 @@
 <header class="header">
     <div class="header_left">
-        {{ with $.Site.Params.header.logo.imgUrl }}
-            {{ if $.Site.Params.header.logo.logoLink }}
-                <a href="{{ $.Site.Params.header.logo.logoLink }}">
-                    <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
-                    alt="logo" />
-                </a>
-            {{ else }}
-                <a href="/">
-                    <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
-                    alt="logo" />
-                </a>
-            {{ end }}
+        <!--
+            {{ with $.Site.Params.header.logo.imgUrl }}
+                {{ if $.Site.Params.header.logo.logoLink }}
+                    <a href="{{ $.Site.Params.header.logo.logoLink }}">
+                        <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
+                        alt="logo" />
+                    </a>
+                {{ else }}
+                    <a href="/">
+                        <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
+                        alt="logo" />
+                    </a>
+                {{ end }}
 
+            {{ end }}
+        -->
+        {{ with  $.Site.Params.page.showBreadcrumb }}
+            <div class="breadcumb">
+                {{ partial "module/breadcrumb" $ }}
+            </div>
         {{ end }}
     </div>
 

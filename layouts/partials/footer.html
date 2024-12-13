@@ -1,14 +1,14 @@
 <footer class="footer">
     <div class="footer-left">
         <ul class="social">
+            {{ with $.Site.Params.globalFrontmatter.author }}
+                <li>{{ . }}</li>
+            {{ end }}
+            <li>-</li>
             {{ if $.Site.Params.footer.copyrightStr }}
                 <li>{{ $.Site.Params.footer.copyrightStr }}</li>
             {{ else }}
                 <li class="copyright-link"><a href="https://fivem.net" target="_blank">FiveM</a>&nbsp;by&nbsp;<a href="https://cfx.re" target="_blank">Cfx.re</a></li>
-            {{ end }}
-
-            {{ with $.Site.Params.globalFrontmatter.author }}
-                <li>{{ . }}</li>
             {{ end }}
 
             {{ range $key, $val := $.Site.Params.footer.socialLink }}
