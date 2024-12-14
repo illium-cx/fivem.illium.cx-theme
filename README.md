@@ -626,6 +626,11 @@ hugo server
 
 Then, you should be able to see your site at `localhost:1313`. From now on, all changes made locally will be reflected on the site, without the need to refresh your browser each time. Additionally, all files will not be minified or merged in this development mode, making it easier to debug any issues.
 
+If the site is on a remote host, you can access the live server with an ssh tunnel
+```
+ssh -L 1313:localhost:1313 user@remote-host
+```
+
 ### Release
 
 ```

@@ -9,12 +9,12 @@
     General
 ***************/
 article.main > div.content * {
-    line-height: 22pt;
+    line-height: 18pt;
     color: #e6edf3;
 }
 
 article.main > div.content > :first-child {
-    margin-top: 24pt;
+    /*margin-top: 24pt;*/
 }
 
 /**************
@@ -197,13 +197,14 @@ article.main > div.content code:not(div.highlight code) {
     border-radius: 5pt;
     margin-left: 0.2em;
     margin-right: 0.2em;
+    padding-left:
 }
 
 /*** Code block indented with four spaces ***/
 article.main > div.content pre:not(div.highlight pre) {
     border-radius: 10px;
     padding: 1em;
-    overflow: auto;
+    overflow: scroll;
     background-color: #202020;
 }
 
@@ -216,8 +217,10 @@ article.main > div.content pre:not(div.highlight pre) > code {
 
 /*** Highlight Codeblock ***/
 article.main > div.content div.codeblock {
-    margin-top: -2em;
+    margin-top: -2em;    
+    overflow: auto; 
 }
+
 article.main > div.content div.codeblock > div.copy-button-box {
     display: inline-flex;
     position: relative;
