@@ -76,3 +76,18 @@ theme = 'fivem.illium.cx-theme'
 
     [params.preference]
         showFileName = false
+
+[markup]
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ''
+        hl_inline = false
+        lineAnchors = ''
+        lineNosStart = 1
+        lineNumbersInTable = true
+        noClasses = true
+        noHl = false
+        tabWidth = 4
+        lineNos = true
